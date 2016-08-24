@@ -79,6 +79,15 @@
                                             </button>
                                         </form>
                                     </td>
+
+                                    <!-- Show More Button -->
+				    <td>
+                                        <form action="{{ url('todo/'.$todo->id) }}" method="GET">
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="fa fa-trash"></i> Show More
+                                            </button>
+                                        </form>
+                                    </td>
                                 </td>
                             </tr>
                         @endforeach

@@ -57,7 +57,9 @@ class TodoController extends Controller
      */
     public function show($id)
     {
-        // Write the code for your assignment here.
+        $todo = Todo::find($id);
+	
+	return view('todo', ['todo'=>$todo]);
     }
 
     /**
